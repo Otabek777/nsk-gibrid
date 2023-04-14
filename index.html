@@ -16,7 +16,12 @@
     <header class="header">
         <div class="container">
             <div class="header__box">
-                <a href="" class="header__logo"></a>
+                <a href="" class="header__logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <button class="header__burgir">
+                    <span></span><span></span><span></span>
+                </button>
                 <div class="header__wrap">
                     <div class="header__top">
                         <div class="header__address">
@@ -28,19 +33,19 @@
                     <div class="header__navbar">
                         <ul>
                             <li>
-                                <a class="active" href="#">Наши услуги</a>
+                                <a class="active" href="#services">Наши услуги</a>
                             </li>
                             <li>
-                                <a href="#">Стоимость ремонта</a>
+                                <a href="#repair">Стоимость ремонта</a>
                             </li>
                             <li>
                                 <a href="#">Гарантия на работы</a>
                             </li>
                             <li>
-                                <a href="#">Отзывы</a>
+                                <a href="#reviews">Отзывы</a>
                             </li>
                             <li>
-                                <a href="#">Контакты</a>
+                                <a href="#contacts">Контакты</a>
                             </li>
                         </ul>
                     </div>
@@ -70,15 +75,25 @@
                 <div class="advantages__box">
                     <div class="advantages__block">
                         <div class="advantages__icon">
+                            <div class="svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="41" viewBox="0 0 32 41" fill="none">
+                                    <path d="M25.3236 0H6.67628L0 6.63803V26.6825L16.1887 41L32 26.6676V6.6372L25.3236 0ZM15.9995 25.1789L6.23909 15.4893L8.29008 13.4501L15.9992 21.1005L23.6936 13.4501L25.7446 15.4893L15.9995 25.1789Z" fill="#FFEC00"/>
+                                </svg>
+                            </div>
                             <img src="img/advantages-1.svg" alt="">
                         </div>
                         <h5 class="advantages__title">Гарантия на запчасти 1 год</h5>
                     </div>
                     <div class="advantages__block">
                         <div class="advantages__icon">
+                            <div class="svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="41" viewBox="0 0 32 41" fill="none">
+                                    <path d="M25.3236 0H6.67628L0 6.63803V26.6825L16.1887 41L32 26.6676V6.6372L25.3236 0ZM15.9995 25.1789L6.23909 15.4893L8.29008 13.4501L15.9992 21.1005L23.6936 13.4501L25.7446 15.4893L15.9995 25.1789Z" fill="#FFEC00"/>
+                                </svg>
+                            </div>
                             <img src="img/advantages-2.svg" alt="">
                         </div>
-                        <h5 class="advantages__title">Гарантия на на ремонт
+                        <h5 class="advantages__title">Гарантия на ремонт
                             ВВБ до 3-х лет</h5>
                     </div>
                     <div class="advantages__block">
@@ -184,7 +199,7 @@
                     </div>
                 </div>
                 <div class="models__btn">
-                    <button class="main_btn">Записаться на сервис</button>
+                    <button class="btn2">Записаться на сервис</button>
                 </div>
             </div>
         </section>
@@ -200,7 +215,7 @@
                 </div>
             </div>
         </section>
-        <section class="models2">
+        <section class="models2" id="services">
             <img src="img/tire.svg" alt="" class="tire">
             <img src="img/tire-2.svg" alt="" class="tire2">
             <div class="container">
@@ -209,9 +224,9 @@
                     <h6 class="heading_title2">ДИАГНОСТИКА</h6>
                     <div class="diagnostics__grid">
                         <a href="#" class="diagnostics__item">
-                            <h5 class="diagnostics__title">Диагностика систем кондиционирования</h5>
+                            <h5 class="diagnostics__title">Диагностика высоковольтных батарей (ВВБ)</h5>
                             <div class="diagnostics__image">
-                                <img src="img/diagnostics-1.png" alt="">
+                                <img src="img/diagnostics-4.png" alt="">
                             </div>
                         </a>
                         <a href="#" class="diagnostics__item">
@@ -227,9 +242,9 @@
                             </div>
                         </a>
                         <a href="#" class="diagnostics__item">
-                            <h5 class="diagnostics__title">Диагностика высоковольтных батарей (ВВБ)</h5>
+                            <h5 class="diagnostics__title">Диагностика систем кондиционирования</h5>
                             <div class="diagnostics__image">
-                                <img src="img/diagnostics-4.png" alt="">
+                                <img src="img/diagnostics-1.png" alt="">
                             </div>
                         </a>
                         <a href="#" class="diagnostics__item">
@@ -246,7 +261,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="repair">
+                <div class="repair" id="repair">
                     <h6 class="heading_title2">Ремонт</h6>
                     <div class="repair__grid">
                         <a href="#" class="repair__item">
@@ -273,12 +288,12 @@
                             </div>
                             <h5 class="repair__title">Ремонт двигателя</h5>
                         </a>
-                        <a href="#" class="repair__item">
+                        <!-- <a href="#" class="repair__item">
                             <div class="repair__image">
                                 <img src="img/repair-5.png" alt="">
                             </div>
                             <h5 class="repair__title">Дополнительное оборудывание</h5>
-                        </a>
+                        </a> -->
                         <a href="#" class="repair__item">
                             <div class="repair__image">
                                 <img src="img/repair-6.png" alt="">
@@ -289,7 +304,7 @@
                 </div>
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" id="reviews">
             <div class="container">
                 <h5 class="heading_title"><span>Отзывы</span></h5>
                 <div class="reviews__img">
@@ -303,68 +318,68 @@
                 <h5 class="heading_title"><span>Акции</span></h5>
                 <div class="stock__slider">
                     <div class="stock__wrap">
-                        <div class="stock__block">
+                        <a href="#" class="stock__block">
                             <div class="stock__img">
-                                <img src="img/stock.jpg" alt="">
+                                <img src="img/stock-2.png" alt="">
                             </div>
                             <div class="stock__content">
-                                <h5 class="stock__title">Скидка на запчасти до 10%</h5>
+                                <h5 class="stock__title">Поставь бесплатно фирменную рамку и получи скидку 50% на компьютерную диагностику своего автомобиля*</h5>
                                 <div class="stock__text">
-                                    <p>Запчасти со скидкой до 10%. Подробности уточняйте у сотрудников.</p>
+                                    <p>* Подробности уточняйте у сотрудников по телефону +7 (383) 299-11-13.</p>
                                 </div>
                                 <div class="stock__date">
                                     <p>с 30.01.2023 по 31.12.2023</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="stock__wrap">
-                        <div class="stock__block">
+                        <a href="#" class="stock__block">
                             <div class="stock__img">
-                                <img src="img/stock.jpg" alt="">
+                                <img src="img/stock-2.png" alt="">
                             </div>
                             <div class="stock__content">
-                                <h5 class="stock__title">Скидка на запчасти до 10%</h5>
+                                <h5 class="stock__title">Поставь бесплатно фирменную рамку и получи скидку 50% на компьютерную диагностику своего автомобиля*</h5>
                                 <div class="stock__text">
-                                    <p>Запчасти со скидкой до 10%. Подробности уточняйте у сотрудников.</p>
+                                    <p>* Подробности уточняйте у сотрудников по телефону +7 (383) 299-11-13.</p>
                                 </div>
                                 <div class="stock__date">
                                     <p>с 30.01.2023 по 31.12.2023</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="stock__wrap">
-                        <div class="stock__block">
+                        <a href="#" class="stock__block">
                             <div class="stock__img">
-                                <img src="img/stock.jpg" alt="">
+                                <img src="img/stock-2.png" alt="">
                             </div>
                             <div class="stock__content">
-                                <h5 class="stock__title">Скидка на запчасти до 10%</h5>
+                                <h5 class="stock__title">Поставь бесплатно фирменную рамку и получи скидку 50% на компьютерную диагностику своего автомобиля*</h5>
                                 <div class="stock__text">
-                                    <p>Запчасти со скидкой до 10%. Подробности уточняйте у сотрудников.</p>
+                                    <p>* Подробности уточняйте у сотрудников по телефону +7 (383) 299-11-13.</p>
                                 </div>
                                 <div class="stock__date">
                                     <p>с 30.01.2023 по 31.12.2023</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     <div class="stock__wrap">
-                        <div class="stock__block">
+                        <a href="#" class="stock__block">
                             <div class="stock__img">
                                 <img src="img/stock.jpg" alt="">
                             </div>
                             <div class="stock__content">
-                                <h5 class="stock__title">Скидка на запчасти до 10%</h5>
+                                <h5 class="stock__title">Поставь бесплатно фирменную рамку и получи скидку 50% на компьютерную диагностику своего автомобиля*</h5>
                                 <div class="stock__text">
-                                    <p>Запчасти со скидкой до 10%. Подробности уточняйте у сотрудников.</p>
+                                    <p>* Подробности уточняйте у сотрудников по телефону +7 (383) 299-11-13.</p>
                                 </div>
                                 <div class="stock__date">
                                     <p>с 30.01.2023 по 31.12.2023</p>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -375,7 +390,7 @@
                     масла и фильтры</h3>
             </div>
         </section>
-        <section class="location">
+        <section class="location" id="contacts">
             <div class="location__box">
                 <div class="location__map">
                     <div style="position:relative;overflow:hidden;height: 100%;"><a href="https://yandex.uz/maps/65/novosibirsk/?utm_medium=mapframe&utm_source=maps" style="height: 100%;color:#eee;font-size:12px;position:absolute;top:0px;">Новосибирск</a><a href="https://yandex.uz/maps/65/novosibirsk/house/ulitsa_sibiryakov_gvardeytsev_47k8/bEsYfwdiS00DQFtufXV0dXpkZg==/?ll=82.902284%2C54.954673&utm_medium=mapframe&utm_source=maps&z=17.15" style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Сибиряков-Гвардейцев, 47к8 — Яндекс Карты</a><iframe src="https://yandex.uz/map-widget/v1/?ll=82.902284%2C54.954673&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgoxNzQzMDM1MDgxEl%2FQoNC%2B0YHRgdC40Y8sINCd0L7QstC%2B0YHQuNCx0LjRgNGB0LosINGD0LvQuNGG0LAg0KHQuNCx0LjRgNGP0LrQvtCyLdCT0LLQsNGA0LTQtdC50YbQtdCyLCA0N9C6OCIKDfjNpUIVltFbQg%3D%3D&z=17.15" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
@@ -383,7 +398,7 @@
                 <div class="location__form">
                     <div class="location__wrap">
                         <h5 class="location__title">запишитесь на обслуживание</h5>
-                        <form action="">
+                        <!-- <form action="">
                             <div class="form_input">
                                 <input type="text" placeholder="+7 (___) - ___ - __ - __">
                             </div>
@@ -396,7 +411,8 @@
                                     обработку персональных данных</label>
                             </div>
                             <button class="form_btn">Отправить</button>
-                        </form>
+                        </form> -->
+                        <button class="form_btn">Позвонить нам</button>
                     </div>
                     
                 </div>
@@ -406,7 +422,9 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__box">
-                <a href="#" class="footer__logo"></a>
+                <a href="#" class="footer__logo">
+                    <img src="img/logo-footer.png" alt="">
+                </a>
                 <div class="footer__right">
                     <a href="tel:+7 (383) 299-11-13" class="footer__phone">+7 (383) 299-11-13</a>
                     <div class="footer__address">
